@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: eureka registry server
+#  zipkin:
+#    enabled: true
+server:
+  port: 8083
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka
